@@ -1,0 +1,115 @@
+/* =========================== */
+/* 🌈 GENERAL PAGE STYLING 🌈 */
+/* =========================== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* Dark and Light Gradient Background */
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+/* =========================== */
+/* 🌟 MAIN CONTAINER 🌟 */
+/* =========================== */
+.container {
+  background: #ffffff;
+  color: #222;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 15px 40px rgba(0,0,0,0.25);
+  max-width: 420px;
+  width:100%;
+  text-align: center;
+  animation: slideUp 1s ease;
+}
+
+/* =========================== */
+/* 🌟 INPUT AREA 🌟 */
+/* =========================== */
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.input-area input {
+  flex:1;
+  padding:12px;
+  font-size:16px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  outline:none;
+}
+
+.input-area button {
+  padding:12px 18px;
+  font-size:16px;
+  font-weight: bold;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  margin-left:10px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+}
+
+.input-area button:hover {
+  transform: scale(1.06);
+}
+
+/* =========================== */
+/* 🌟 TASK LIST ITEM 🌟 */
+/* =========================== */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  color: #222;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  animation: fadeIn 0.5s ease;
+}
+
+.actions button {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  color: #fff;
+}
+
+.actions button:first-child {
+  background: #ff4e50;
+}
+.actions button:last-child {
+  background: #1f8ef1;
+}
+
+.actions button:hover {
+  transform: scale(1.1);
+}
+
+/* =========================== */
+/* 🌟 KEYFRAMES 🌟 */
+/* =========================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideUp {
+  from { opacity:0; transform: translateY(20px)}
+  to { opacity:1; transform: translateY(0)}
+}
